@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub
+END
+CallbackInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub/CallbackInterface.php
+END
+Publisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub/Publisher.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub/Exception.php
+END
+HttpResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub/HttpResponse.php
+END
+CallbackAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub/CallbackAbstract.php
+END
+Subscriber.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Feed/Pubsubhubbub/Subscriber.php
+END

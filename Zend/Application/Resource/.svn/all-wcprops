@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Application/Resource
+END
+Dojo.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Dojo.php
+END
+Frontcontroller.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Frontcontroller.php
+END
+Translate.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Translate.php
+END
+Cachemanager.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Cachemanager.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Exception.php
+END
+Locale.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Locale.php
+END
+Navigation.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Navigation.php
+END
+Multidb.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Multidb.php
+END
+Modules.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Modules.php
+END
+View.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/View.php
+END
+ResourceAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/ResourceAbstract.php
+END
+Layout.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Layout.php
+END
+Router.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Router.php
+END
+Log.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Log.php
+END
+Mail.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Mail.php
+END
+Session.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Session.php
+END
+Db.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Db.php
+END
+Resource.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/frame/!svn/ver/2/trunk/Zend/Application/Resource/Resource.php
+END

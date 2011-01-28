@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Loader
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Loader/Interface.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Loader/Abstract.php
+END
+IncludePathLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Loader/IncludePathLoader.php
+END
+BasicLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Loader/BasicLoader.php
+END

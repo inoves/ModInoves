@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/frame/!svn/ver/2/trunk/Zend/Queue/Message
+END
+Iterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Queue/Message/Iterator.php
+END
+PlatformJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Queue/Message/PlatformJob.php
+END

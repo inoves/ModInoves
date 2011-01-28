@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation
+END
+IPAddressLocationType.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation/IPAddressLocationType.php
+END
+CityType.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation/CityType.php
+END
+LocateIPResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation/LocateIPResponse.php
+END
+LocateIPResponseType.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation/LocateIPResponseType.php
+END
+RegionType.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation/RegionType.php
+END
+GeoCoordinatesType.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Response/IpLocation/GeoCoordinatesType.php
+END

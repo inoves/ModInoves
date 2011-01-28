@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/frame/!svn/ver/2/trunk/Zend/Ldap/Node
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Ldap/Node/Collection.php
+END
+RootDse.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Ldap/Node/RootDse.php
+END
+Schema.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Ldap/Node/Schema.php
+END
+ChildrenIterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/frame/!svn/ver/2/trunk/Zend/Ldap/Node/ChildrenIterator.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Ldap/Node/Abstract.php
+END

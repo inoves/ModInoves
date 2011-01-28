@@ -1,0 +1,16 @@
+<div class="clnLft mnLft" id="menuLeft">
+	<!-- Menu left -->
+	<div id="menu">
+		<ul class="menu">
+		
+			<?php foreach ($this->menus as $k=>$menuItem):?>
+		
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/<?php echo $k ?>"><?php echo $menuItem?></a>
+				</li>
+		
+			<?php endforeach; ?>
+		
+		</ul>
+	</div>
+</div>

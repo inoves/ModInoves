@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/ResultSet.php
+END
+EditorialReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/EditorialReview.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Exception.php
+END
+Item.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Item.php
+END
+SimilarProduct.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/SimilarProduct.php
+END
+Offer.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Offer.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Abstract.php
+END
+Accessories.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Accessories.php
+END
+Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Query.php
+END
+Sqs.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Sqs.php
+END
+Ec2.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2.php
+END
+ListmaniaList.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/ListmaniaList.php
+END
+OfferSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/OfferSet.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Image.php
+END
+CustomerReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/CustomerReview.php
+END
+S3.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/S3.php
+END

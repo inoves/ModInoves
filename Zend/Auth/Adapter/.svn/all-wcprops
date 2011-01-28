@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter
+END
+DbTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/DbTable.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/Exception.php
+END
+OpenId.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/OpenId.php
+END
+Digest.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/Digest.php
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/Http.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/Interface.php
+END
+Ldap.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/Ldap.php
+END
+InfoCard.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/frame/!svn/ver/2/trunk/Zend/Auth/Adapter/InfoCard.php
+END

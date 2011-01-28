@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/frame/!svn/ver/2/trunk/Zend/Validate/Db
+END
+NoRecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/frame/!svn/ver/2/trunk/Zend/Validate/Db/NoRecordExists.php
+END
+RecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/frame/!svn/ver/2/trunk/Zend/Validate/Db/RecordExists.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Validate/Db/Abstract.php
+END

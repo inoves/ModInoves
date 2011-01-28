@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/frame/!svn/ver/2/trunk/Zend/Log/Filter
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Log/Filter/Interface.php
+END
+Priority.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Log/Filter/Priority.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Log/Filter/Abstract.php
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Log/Filter/Message.php
+END
+Suppress.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Log/Filter/Suppress.php
+END

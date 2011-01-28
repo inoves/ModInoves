@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/frame/!svn/ver/2/trunk/Zend/Measure
+END
+Acceleration.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Measure/Acceleration.php
+END
+Energy.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Energy.php
+END
+Capacitance.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Measure/Capacitance.php
+END
+Power.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Measure/Power.php
+END
+Temperature.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Measure/Temperature.php
+END
+Time.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Measure/Time.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Measure/Exception.php
+END
+Force.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Measure/Force.php
+END
+Speed.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Measure/Speed.php
+END
+Lightness.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Measure/Lightness.php
+END
+Frequency.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Measure/Frequency.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Measure/Abstract.php
+END
+Illumination.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Measure/Illumination.php
+END
+Volume.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Volume.php
+END
+Pressure.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Measure/Pressure.php
+END
+Area.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Measure/Area.php
+END
+Density.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/frame/!svn/ver/2/trunk/Zend/Measure/Density.php
+END
+Torque.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Torque.php
+END
+Length.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Length.php
+END
+Current.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/frame/!svn/ver/2/trunk/Zend/Measure/Current.php
+END
+Binary.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Binary.php
+END
+Angle.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Measure/Angle.php
+END
+Weight.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Weight.php
+END
+Number.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Measure/Number.php
+END

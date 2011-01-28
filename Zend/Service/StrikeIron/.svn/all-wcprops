@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron
+END
+ZipCodeInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron/ZipCodeInfo.php
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron/Base.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron/Exception.php
+END
+USAddressVerification.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron/USAddressVerification.php
+END
+Decorator.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron/Decorator.php
+END
+SalesUseTaxBasic.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron/SalesUseTaxBasic.php
+END

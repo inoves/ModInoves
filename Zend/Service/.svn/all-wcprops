@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/frame/!svn/ver/2/trunk/Zend/Service
+END
+StrikeIron.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Service/StrikeIron.php
+END
+ReCaptcha.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Service/ReCaptcha.php
+END
+Akismet.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/frame/!svn/ver/2/trunk/Zend/Service/Akismet.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Service/Exception.php
+END
+Nirvanix.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Service/Nirvanix.php
+END
+Audioscrobbler.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Service/Audioscrobbler.php
+END
+Technorati.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Service/Technorati.php
+END
+Simpy.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Service/Simpy.php
+END
+Twitter.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/frame/!svn/ver/2/trunk/Zend/Service/Twitter.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Service/Abstract.php
+END
+Flickr.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Service/Flickr.php
+END
+LiveDocx.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Service/LiveDocx.php
+END
+Yahoo.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo.php
+END
+Delicious.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Service/Delicious.php
+END
+SlideShare.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Service/SlideShare.php
+END
+Amazon.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon.php
+END

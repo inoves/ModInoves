@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo
+END
+InlinkDataResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/InlinkDataResultSet.php
+END
+LocalResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/LocalResult.php
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/ResultSet.php
+END
+ImageResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/ImageResultSet.php
+END
+LocalResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/LocalResultSet.php
+END
+PageDataResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/PageDataResult.php
+END
+VideoResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/VideoResult.php
+END
+NewsResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/NewsResult.php
+END
+WebResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/WebResult.php
+END
+InlinkDataResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/InlinkDataResult.php
+END
+Result.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/Result.php
+END
+ImageResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/ImageResult.php
+END
+PageDataResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/PageDataResultSet.php
+END
+VideoResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/VideoResultSet.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/Image.php
+END
+NewsResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/NewsResultSet.php
+END
+WebResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/frame/!svn/ver/2/trunk/Zend/Service/Yahoo/WebResultSet.php
+END

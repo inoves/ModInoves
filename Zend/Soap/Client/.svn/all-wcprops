@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/frame/!svn/ver/2/trunk/Zend/Soap/Client
+END
+Local.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Soap/Client/Local.php
+END
+DotNet.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Soap/Client/DotNet.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/frame/!svn/ver/2/trunk/Zend/Soap/Client/Exception.php
+END
+Common.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/frame/!svn/ver/2/trunk/Zend/Soap/Client/Common.php
+END

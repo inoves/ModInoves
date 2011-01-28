@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2
+END
+Availabilityzones.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Availabilityzones.php
+END
+Ebs.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Ebs.php
+END
+CloudWatch.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/CloudWatch.php
+END
+Elasticip.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Elasticip.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Exception.php
+END
+Response.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Response.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Image.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Abstract.php
+END
+Region.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Region.php
+END
+Instance.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Instance.php
+END
+Keypair.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Keypair.php
+END
+Securitygroups.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/frame/!svn/ver/2/trunk/Zend/Service/Amazon/Ec2/Securitygroups.php
+END

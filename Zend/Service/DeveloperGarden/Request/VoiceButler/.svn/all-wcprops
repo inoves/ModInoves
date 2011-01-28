@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Request/VoiceButler
+END
+CallStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Request/VoiceButler/CallStatus.php
+END
+TearDownCall.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Request/VoiceButler/TearDownCall.php
+END
+NewCallSequenced.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Request/VoiceButler/NewCallSequenced.php
+END
+NewCall.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Request/VoiceButler/NewCall.php
+END
+VoiceButlerAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Request/VoiceButler/VoiceButlerAbstract.php
+END

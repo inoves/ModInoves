@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/frame/!svn/ver/2/trunk/Zend/Oauth
+END
+Consumer.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Oauth/Consumer.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Oauth/Client.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/frame/!svn/ver/2/trunk/Zend/Oauth/Exception.php
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/frame/!svn/ver/2/trunk/Zend/Oauth/Http.php
+END
+Token.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/frame/!svn/ver/2/trunk/Zend/Oauth/Token.php
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Oauth/Config.php
+END

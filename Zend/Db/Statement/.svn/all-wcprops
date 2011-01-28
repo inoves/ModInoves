@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/frame/!svn/ver/2/trunk/Zend/Db/Statement
+END
+Sqlsrv.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Sqlsrv.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Exception.php
+END
+Mysqli.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Mysqli.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Interface.php
+END
+Pdo.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Pdo.php
+END
+Oracle.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Oracle.php
+END
+Db2.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/frame/!svn/ver/2/trunk/Zend/Db/Statement/Db2.php
+END

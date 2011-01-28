@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Client/Console/ResponseDecorator
+END
+AlignCenter.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Client/Console/ResponseDecorator/AlignCenter.php
+END
+Blockize.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Client/Console/ResponseDecorator/Blockize.php
+END
+Indention.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Client/Console/ResponseDecorator/Indention.php
+END
+Colorizer.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/frame/!svn/ver/2/trunk/Zend/Tool/Framework/Client/Console/ResponseDecorator/Colorizer.php
+END

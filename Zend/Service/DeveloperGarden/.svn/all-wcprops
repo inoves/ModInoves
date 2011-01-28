@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden
+END
+BaseUserService.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/BaseUserService.php
+END
+Credential.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Credential.php
+END
+SendSms.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/SendSms.php
+END
+SmsValidation.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/SmsValidation.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/Exception.php
+END
+SecurityTokenServer.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/SecurityTokenServer.php
+END
+LocalSearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/LocalSearch.php
+END
+IpLocation.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/IpLocation.php
+END
+VoiceCall.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/VoiceCall.php
+END
+ConferenceCall.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/frame/!svn/ver/2/trunk/Zend/Service/DeveloperGarden/ConferenceCall.php
+END

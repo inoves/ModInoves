@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/frame/!svn/ver/2/trunk/Zend/Captcha
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Captcha/Base.php
+END
+Figlet.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/frame/!svn/ver/2/trunk/Zend/Captcha/Figlet.php
+END
+ReCaptcha.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Captcha/ReCaptcha.php
+END
+Word.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Captcha/Word.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/frame/!svn/ver/2/trunk/Zend/Captcha/Exception.php
+END
+Adapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/frame/!svn/ver/2/trunk/Zend/Captcha/Adapter.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/frame/!svn/ver/2/trunk/Zend/Captcha/Image.php
+END
+Dumb.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/frame/!svn/ver/2/trunk/Zend/Captcha/Dumb.php
+END
