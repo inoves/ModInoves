@@ -14,22 +14,20 @@ class Inoves_View_HTML
 	
 	static private $_partials=array();
 	
-	
+	//Get variables
 	static public function get($name)
 	{
 		return self::$_vars[$name];
 	}
 	
+	//set variables
 	static public function set($name, $value)
 	{
 		return self::$_vars[$name]=$value;
 	}
 	
 	
-	static public function init()
-	{
-		
-	}
+	static public function init(){}
 	
 	
 	static public function setLayout($value='')
@@ -46,8 +44,18 @@ class Inoves_View_HTML
 		return self::$_partials[$partialArea];
 	}
 	
+	/**
+	 * * Inoves_View_HTML::getPartials('nameArea');
+	* Inoves_View_HTML::setPartials('nameArea', $partial);
+	 */
+	static public function existPartials($partialArea)
+	{
+		return isset(self::$_partials[$partialArea]);
+	}
 	
-	static public function setPartial($partialArea, Inoves_Partial $partial)
+	
+	
+	static public function addPartial($partialArea, Inoves_Partial $partial)
 	{
 		self::$_partials[$partialArea] .= $partial->toString();
 	}
@@ -55,9 +63,10 @@ class Inoves_View_HTML
 	static public function show()
 	{
 		ob_start();
-			include PATH_ROOT.'/Modules/'.self::$_layout;
+			include Inoves_System::$pathModules .'/'.self::$_layout;
 		$output = ob_get_contents();
 		ob_clean();
+		return $output;
 	}
 	
 	

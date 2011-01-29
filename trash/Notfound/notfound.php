@@ -5,9 +5,7 @@
 class Notfound extends Inoves_Modules
 {
 	
-	//deve ser sempre o ultimo controller a executar
-	public $order = 1000;
-	
+	public $order = 100;
 	
 	static function setup()
 	{
@@ -18,10 +16,11 @@ class Notfound extends Inoves_Modules
 	//lista todos os itens do menu
 	public function run()
 	{
-		if (!Inoves_View::existPartials('action')):
+		//var_dump(Inoves_View::query('#contentMain'));
+		if(count( Inoves_View::query('#contentMain')->elements )==0){
 			$partial = new Inoves_Partial('NotFound/partial/contentMain.phtml');
-			Inoves_View::addPartial('action', $partial);
-		endif;
+			Inoves_View::prepend('#content', $partial);
+		}
 	}
 	
 	

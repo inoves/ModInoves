@@ -45,6 +45,8 @@ class Inoves_System
 	//carrega routes
 	static public function setupModules()
 	{
+		//carrega rotas
+		//para conseguir cache aqui, tens que ter cache em router
 		foreach (self::$_AddOns as $order => $modules) {
 			foreach ($modules as  $module){
 				self::$currentOrder = $order;//travel
@@ -72,6 +74,13 @@ class Inoves_System
 				$objClass->$action();
 			}
 		}
+	}
+	
+	
+	static public function redirect($value='', $exit=true)
+	{
+		header('location: '. $value);
+		if($exit) exit(0);
 	}
 	
 }

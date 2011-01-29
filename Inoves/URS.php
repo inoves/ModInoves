@@ -39,13 +39,20 @@ class Inoves_URS
 	{
 		self::$action=($value)?strtolower($value):Inoves_URS::ACTION_DEFAULT;
 	}
+	
 	//controller/action/param1/param2/param3...
 	static public function setRequest($value='')
 	{
-		list($c,$a,self::$params)=explode('/', substr($value, 1));
+		list($c,$a,$params)=explode('/', substr($value, 1));
 		self::setController($c);
 		self::setAction($a);
+		if (!is_array($params))
+			self::$params[0] = $params;
+		else
+			self::$params = $params;
 	}
+	
+	
 	static public function setURS($c,$a)
 	{
 		self::setController($c);

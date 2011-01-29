@@ -23,22 +23,17 @@ $autoload = new Inoves_Loader();
 Inoves_URS::setRequest($_SERVER['REQUEST_URI']);
 
 
-
-//from cache
-//if(false === ($system = Frame_Cache::get('frame_system'))){
-//	$system = new Frame_System(FRAME_PATH.'/Addons/');//carrega addons
-//}
-
-
 //carrega modules e carrega call
 Inoves_System::chargeModules( PATH_ROOT . '/Modules');
-
 
 
 //retorna os os callbacks configurados nos modules
 $calls = Inoves_Routes::calls(Inoves_URS::$controller, Inoves_URS::$action);
 
-Inoves_View::init();
+
+include PATH_ROOT.'/Config/bootstrapApp.php';
+
+
 
 //executa os callbacks
 Inoves_System::call($calls);

@@ -39,7 +39,7 @@
 		<div class="bckgrnd1">
 			
 			<div id="menuTop">
-				<?php echo Inoves_View_HTML::getPartials('menuTop'); ?>
+				<!--? $this->partial('elements/modules/menuTop.phtml') ?-->
 			</div>
 
 			<div id="contentLogo">
@@ -49,30 +49,23 @@
 				</div>
 				
 				<div class="clnRgh boxLogin" id="boxLogin">
-					<?php echo Inoves_View_HTML::getPartials('loginBox'); ?>
+					<!--? $this->partial('elements/modules/login.phtml') ?-->
 				</div>
 				
 				<div class="clrFx"></div>
 			</div>
 			
-			<div id="main">
+			<div id="content">
 				
-				<div id="content">
-					<?php echo Inoves_View_HTML::getPartials('action'); ?>
-					
-					<?php echo Inoves_View_HTML::getPartials('content'); ?>
-				</div>
 				
-				<div id="sidebar" class="clnLft mnLft">
-					<?php echo Inoves_View_HTML::getPartials('sidebar'); ?>
-				</div>
 				
+				<div class="clrFx"></div>
 			</div>
+			
 		</div>
 		
-		<div class="clrFx"></div>
 		<div class="footerLellol" id="contentFooter">
-			<?php echo Inoves_View_HTML::getPartials('footer'); ?>
+			<!--? $this->partial('elements/modules/footer.phtml') ?-->
 		</div>
 </body>
 </html>

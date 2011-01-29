@@ -2,7 +2,7 @@
 /**
 * 
 */
-class Inoves_View extends Inoves_View_DOM
+class Inoves_View extends Inoves_View_HTML
 {
 	
 	
