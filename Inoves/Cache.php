@@ -3,12 +3,32 @@
 
 class Inoves_Cache
 {
+	
+	const CACHE_OUTPUT 	= false;
+	
+	const CACHE_CORE 	= false;
+	
 	static public $cache = true;
 	
-	
-	
-	
 	static private $_cache=null;
+	
+	
+	
+	public function validOutput($value, $ttl=120)
+	{
+		return (file_exists(PATH_ROOT . '/Cache/'. md5($value))  && filemtime( PATH_ROOT . '/Cache/'. md5($value)) < (time() + $ttl));
+	}
+	
+	public function openOutput($value)
+	{
+		return file_get_contents(PATH_ROOT . '/Cache/'. md5($value)) ;
+	}
+	
+	public function saveOutput($data, $value)
+	{
+		return file_put_contents(PATH_ROOT . '/Cache/'. md5($value), $data) ;
+	}
+	
 	
 	static public function instance(){
 		if( is_null(self::$_cache) )

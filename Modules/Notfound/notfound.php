@@ -19,7 +19,7 @@ class Notfound extends Inoves_Modules
 	public function run()
 	{
 		if (!Inoves_View::existPartials('action')):
-			$partial = new Inoves_Partial('NotFound/partial/contentMain.phtml');
+			$partial = new Inoves_Partial('NotFound/partial/notfoundContent.phtml');
 			Inoves_View::addPartial('action', $partial);
 		endif;
 	}

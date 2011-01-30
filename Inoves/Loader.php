@@ -25,7 +25,7 @@ class Inoves_Loader
 	
 	static function includeNow($locationClass)
 	{
-		return include $locationClass;
+		return include_once $locationClass;
 	}
 	
 }

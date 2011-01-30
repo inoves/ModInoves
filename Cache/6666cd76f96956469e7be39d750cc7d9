@@ -1,8 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<head>
+		<title>lellol.com</title>
+	</head>
+	
+	<link rel="stylesheet" href="/styles/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/styles/base.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/styles/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="/styles/tipsy.css" type="text/css" />
+	
+	<script src="/scripts/jquery.min.js" type="text/javascript"></script>
+	<script src="/scripts/jquery.tipsy.js" type="text/javascript"></script>
+	<script src="/scripts/validated.js" type="text/javascript"></script>
+	<script src="/facebox/facebox.js" type="text/javascript"></script>
+	<script src="/scripts/jquery.MultiFile.js" type="text/javascript"></script>
+	<script src="/swfupload/jquery.swfupload.js" type="text/javascript"></script>
+	
+	
+	<!--? $this->partial('elements/js/lellol.phtml')?-->
+	
+	
+	<style type="text/css">
+		.my-groovy-style {
+			color: yellow;
+			background-color: purple;
+		}
 
+		.my-groovy-style img {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	
+	<body>
+		<div class="bckgrnd1">
+			
+			<div id="menuTop">
+				Country selected: <img src="/images/icons/flags/pt.png"/> | 
+List of countries: 
+ <img src="/images/icons/flags/au.png" alt="Australia"/>&nbsp;
+ <img src="/images/icons/flags/br.png" alt="Brasil"/>&nbsp;
+<img src="/images/icons/flags/es.png" alt="Espanha"/>&nbsp;
+<img src="/images/icons/flags/en.png" alt="U.S.A."/> 			</div>
+
+			<div id="contentLogo">
+				
+				<div class="clnLft" id="logoImage">
+						<a href="/" class="logo"><img src="/images/logo.png" border="0"></a>
+				</div>
+				
+				<div class="clnRgh boxLogin" id="boxLogin">
+									</div>
+				
+				<div class="clrFx"></div>
+			</div>
+			
+			<div id="main">
+				
+				
 <div id="content" class="clnRgh cntMain">
 	
 	<div id="contentMain">
-		<h1>CONTENT <?php echo $this->slug ?></h1>
+		<h1>HOME PAGE</h1>
 		<div>
 		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 
@@ -16,9 +77,57 @@
 		</div>
 	</div>
 	
-	<?php echo Inoves_View_HTML::getPartials('content'); ?>
+		
+	<h2>olalalal</h2>	
 </div>
 
 <div id="sidebar" class="clnLft mnLft">
-	<?php echo Inoves_View_HTML::getPartials('sidebar'); ?>
-</div>
+	<div id="menuLeft">
+	<!-- Menu left -->
+	<div id="menu">
+		<ul class="menu">
+		
+					
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/0">menu1</a>
+				</li>
+		
+					
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/1">menu2</a>
+				</li>
+		
+					
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/2">menu3</a>
+				</li>
+		
+					
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/3">menu4</a>
+				</li>
+		
+					
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/4">menu5</a>
+				</li>
+		
+					
+				<li class="menuItem">
+					<a class="lnkMenuItem " href="/menu/slug/5">menu6</a>
+				</li>
+		
+					
+		</ul>
+	</div>
+</div></div>
+				
+				
+			</div>
+		</div>
+		
+		<div class="clrFx"></div>
+		<div class="footerLellol" id="contentFooter">
+					</div>
+</body>
+</html>

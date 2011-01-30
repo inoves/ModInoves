@@ -35,7 +35,7 @@ class Inoves_System
 				    }
 				}
 				ksort(self::$_AddOns);
-				Inoves_Cache::save(self::$_AddOns, 'Inoves_System_AddOns');
+				//Inoves_Cache::save(self::$_AddOns, 'Inoves_System_AddOns');
 			}			
 		//}
 		self::setupModules();

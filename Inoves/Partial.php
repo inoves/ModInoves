@@ -26,7 +26,17 @@ class Inoves_Partial
 	}
 	
 	
+	public function includePartial($value='')
+	{
+		include Inoves_System::$pathModules .'/'.$value;
+	}
+	
 	public function toString()
+	{
+		return $this->__toString();
+	}
+	
+	public function __toString()
 	{
 		ob_start();
 			include Inoves_System::$pathModules .'/'.$this->_pathPartial;

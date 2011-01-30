@@ -27,8 +27,6 @@ class Inoves_View_HTML
 	}
 	
 	
-	static public function init(){}
-	
 	
 	static public function setLayout($value='')
 	{
@@ -53,20 +51,24 @@ class Inoves_View_HTML
 		return isset(self::$_partials[$partialArea]);
 	}
 	
-	
+	static public function includePartial($value='')
+	{
+		include Inoves_System::$pathModules . $value;
+	}
 	
 	static public function addPartial($partialArea, Inoves_Partial $partial)
 	{
 		self::$_partials[$partialArea] .= $partial->toString();
 	}
 	
+	
 	static public function show()
 	{
-		ob_start();
+		//ob_start();
 			include Inoves_System::$pathModules .'/'.self::$_layout;
-		$output = ob_get_contents();
-		ob_clean();
-		return $output;
+		//$output = ob_get_contents();
+		//ob_clean();
+		//return $output;
 	}
 	
 	
