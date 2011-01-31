@@ -104,8 +104,8 @@ h3. Camada View
 
 h3. Modelos
 
-Existem disponiveis diversas bibliotecas ORM. Nós utilizamos as que já existem e oque para nós atendem a todas as nossas necessidades. Poderá ter uma lista das diversas bibliotecas em:
+Existem disponiveis diversas bibliotecas ORM. Nós utilizamos as que já existem e no nosso caso atendem a todas as nossas necessidades. Poderá ver uma lista das diversas bibliotecas ORM em:
 	- http://en.wikipedia.org/wiki/List_of_object-relational_mapping_software#PHP
 
 Poderá obter informações de como registar os autoloader no bootstrap de seu sistema em:
-http://framework.zend.com/manual/en/zend.loader.autoloader.html
+"linktext":http://framework.zend.com/manual/en/zend.loader.autoloader.html
