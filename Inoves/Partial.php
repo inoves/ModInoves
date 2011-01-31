@@ -39,7 +39,7 @@ class Inoves_Partial
 	public function __toString()
 	{
 		ob_start();
-			include Inoves_System::instance()->pathModules .'/'.$this->_pathPartial;
+		include Inoves_System::instance()->pathModules .'/'.$this->_pathPartial;
 		$output = ob_get_contents();
 		ob_clean();
 		return $output;

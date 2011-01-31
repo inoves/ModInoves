@@ -1,0 +1,97 @@
+h1. Frame_Inov.es ad hoc for web!
+
+
+
+h2. Extreme modular MCV framework
+
+Provalmente seja a framework mais modular que exista actualmente.
+
+
+Um problema que timanhos ao utilizar as frameworks generalistas que existem, era que quando mais modular um sistema precisava ser, mas fugia ao desenho que achamos que precisava ter. Um desenho MCV sem grande gambiaras, com o minimo de esforço na estrutura.
+
+
+Por este motivo foi desenvolvida como prova de conceito esta framework, e logo provou ser uma camada de trabalho extremamente eficiente para desenvolver aplicativos onde a modulação é obrigatório.
+
+
+Nossa intenção não foi desenvolver uma framework totalmente nova para todos os requisitos exigidos pelo sistema, até poque actualmente existem desenvolvidos excelentes 'frameworks' generalistas, e na verdade tiramos partido disso (DRY principle), utilizando os componente que achassemos preciso para construir nossa framework extremamente modular.
+
+
+
+h2. Sistema Modular.
+
+Para entender nossa visão, temos que enquadrar oque achamos que é um sistema modular. Oque difere da visão de um sistema modular 'pregado' por outras frameworks.
+
+
+Geralmente encontramos frameworks que dizem ser modulares simplesmente por compartilharem alguma parte da camada do seu sistema, mas geralmente com alguma dependência de estrutura.
+
+
+Nós entendemos que para um 'sistema' ser considerado modular, ele precisa ser totalmente *autonomo* na sua concepção, implementação e autonomo na sua instalação sem dependecia estrutural.
+
+
+Obvio que existem camadas que precisam ser compartilhadas por todo o sistema como por exemplo a camada de modelo, mas isso pode não ser uma regra.
+
+
+
+h2. Como funciona?
+
+Primeiramente nossa framework obriga desenvolver modulos dentro 'design pattern' MCV. Notará que ao aprender e utilizar a framework, que não terá nenhum choque de conhecimento se estiver habituado a frameworks MCV.
+
+
+Inicialmente existem 9 directorios em uma instalação padrão da framework Inov.es
+
+
+- FrameInov.es (Root dir)
+	- Cache
+		Esta pasta guarda os ficheiros CACHE do output gerado pelo sistema. Este cache é considerado um cache 'Lazy'. Pois se estiver configurado para ser utilizado, o sistema será desviado caso encontre(hit) um ficheiro cache correspondente ao pedido (somente pedidos tipo GET).
+	- Config
+		Pasta onde contém os ficheiros de configuração.
+	- Inoves
+		Pasta onde contém ficheiros do sistema.
+	- Lib
+		Pasta onde será colocada os ficheiros das 'bibliotecas' que acharem necessária.
+	- Logs
+		Pasta onde podes colocar os ficheiros logs do sistema.
+	- Model
+		Nesta pasta guarda-se os ficheiros que representam a camada modelo do sistema.
+	- Modules
+		Pasta onde contém os modulos desenvolvidos para o sistema. Mais detalhes adiante.
+	- Public
+		Pasta onde contém os ficheiros publicos disponiveis pelo 'web server', tais como imagens, ficheiros CSS e JS.
+	- Zend
+		Pasta onde contem os componentes da framework ZEND utilizados por nosso sistema.
+
+
+		
+h2. Pasta Modules
+
+h3. Controller
+
+Cada pedido(request) é composto por dois identificadores. Que pode ser identificado por um par 'controller/action'. Sempre haverá um controller/action que se relaciona com o request.
+
+Ao criar um modulo, voce ira configurar uma rota dentro de seu modulo que dirá ao sistema para *executar* uma determinada funcção quando for solicitada o deterninado request identificado pelo par 'controller/action'.
+
+bq. algo como:
+	Inoves_Router::add('Widget::show', array('only'=>'/'))
+	//Oque estou dizendo acima é para o sistema executar a função Widget::show somente quando for solicitada homepage '/'  (ou 'index/index')
+ou
+	Inoves_Router::add('Widget::show', array('only'=>array('/', 'account/*')))
+	//neste caso somente quando for encontrado a rota homepage e toda a vez que o 'controller' account for solicitado para todas as actions disponiveis.
+
+
+
+p. Outra maneira de configurar a rota é dizendo para executar uma determinada função para todas as rotas
+Assim:
+
+bq.	Inoves_Router::add('Widget::show')
+	
+
+
+h3. Camada View
+
+h3. Modelos
+
+Existem disponiveis diversas bibliotecas ORM. Nós utilizamos as que já existem e que para nós atendem a todas as nossas necessidades. Poderá ter uma lista das diversas bibliotecas em:
+	- http://en.wikipedia.org/wiki/List_of_object-relational_mapping_software#PHP
+
+Poderá obter informações de como registar os autoloader no bootstrap de seu sistema em:
+http://framework.zend.com/manual/en/zend.loader.autoloader.html

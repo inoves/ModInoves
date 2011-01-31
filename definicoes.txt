@@ -1,17 +1,1 @@
-//subtitui o layout que será processado
-InovesView::setLayout('core/partial/layout.phtml', 0);
-
-
-//defini uma prioridade global para executar o controller
-InovesRoute::priorityController( 1 );//seta a prioridade de excução deste controller.
-
-//adiciona uma rota
-InovesRoute::add('menu', array('except'=>'car/*'));
-InovesRoute::add('menu');//executa menu em todos os controller e actions
-InovesRoute::replace('selectSpecial', array('only'=>'menu/select'));
-
-
-//processa uma partial e tem um ID para se caso seja preciso recuparar os dados por outro controller de maior prioridade
-$partialMenu = new InovesPartial('menuLeft.phtml', 'menuLeft');
-//adiciona o partial a area html escolhida
-InovesView::append('#colLeft', $partialMenu);
+TODOs

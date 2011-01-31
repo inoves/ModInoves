@@ -3,7 +3,7 @@
 
 class Inoves_Cache
 {
-	const CACHE_SYSTEM 	= true;
+	const CACHE_SYSTEM 	= false;
 	
 	const CACHE_OUTPUT 	= false;
 	

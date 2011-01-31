@@ -1,6 +1,4 @@
 <?php
-
-
 // Define path to root directory
 defined('PATH_ROOT')
     || define('PATH_ROOT', realpath(dirname(__FILE__) . '/../'));
@@ -14,23 +12,14 @@ set_include_path( PATH_ROOT.
 				  PATH_SEPARATOR.
 				  FRAME_PATH.'/Lib/');
 
-
 //Autoload
-include(PATH_ROOT.'/Inoves/Loader.php');
-$autoload = new Inoves_Loader();
-include(PATH_ROOT.'/Inoves/Cache.php');
-
+include(PATH_ROOT.'/Zend/Loader/Autoloader.php');
+Zend_Loader_Autoloader::getInstance()->registerNamespace('Inoves_');
 
 if(Inoves_Cache::CACHE_OUTPUT && $_GET && Inoves_Cache::validOutput($_SERVER['REQUEST_URI'], 120)){
 	echo Inoves_Cache::openOutput($_SERVER['REQUEST_URI']);
 	exit;
 }
-
-include(PATH_ROOT.'/Inoves/URS.php');
-include(PATH_ROOT.'/Inoves/System.php');
-include(PATH_ROOT.'/Inoves/Routes.php');
-include(PATH_ROOT.'/Inoves/View.php');
-
 
 
 //carrega URS
@@ -48,7 +37,8 @@ Inoves_System::chargeModules( PATH_ROOT . '/Modules');
 $calls = Inoves_Routes::calls(Inoves_URS::$controller, Inoves_URS::$action);
 
 
-include PATH_ROOT.'/Config/bootstrapApp.php';
+//Bootstrap file of modules
+include PATH_ROOT.'/Config/bootstrap.php';
 
 
 //executa os callbacks

@@ -64,11 +64,16 @@ class Inoves_View_HTML
 	
 	static public function show()
 	{
-		//ob_start();
+		if(Inoves_Cache::CACHE_OUTPUT) 
+			ob_start();
+			
 			include_once Inoves_System::instance()->pathModules .'/'.self::$_layout;
-		//$output = ob_get_contents();
-		//ob_clean();
-		//return $output;
+		
+		if(Inoves_Cache::CACHE_OUTPUT){ 
+			$output = ob_get_contents();
+			ob_clean();
+			return $output;
+		}
 	}
 	
 	

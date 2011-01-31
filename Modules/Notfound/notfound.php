@@ -18,6 +18,7 @@ class Notfound extends Inoves_Modules
 	//lista todos os itens do menu
 	public function run()
 	{
+		//não existe partials na area action
 		if (!Inoves_View::existPartials('action')):
 			$partial = new Inoves_Partial('NotFound/partial/notfoundContent.phtml');
 			Inoves_View::addPartial('action', $partial);
