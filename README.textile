@@ -75,6 +75,7 @@ Cada pedido(request) é composto por dois identificadores. Que pode ser identifi
 
 Ao criar um modulo, voce ira configurar uma rota dentro de seu modulo atravez da funcção _setup()_ que dirá ao sistema para *executar* uma determinada funcção quando for solicitada um request identificado pelo par 'controller/action'.
 
+
 bc. algo como:
 	Inoves_Router::add('Widget::show', array('only'=>'/'))
 	//Oque estou dizendo acima é para o sistema executar a função Widget::show somente quando for solicitada homepage '/'  (ou 'index/index')
@@ -86,12 +87,14 @@ ou
 
 p. Outra maneira de configurar uma rota é dizendo para executar uma determinada função para todas os pedidos controller/action, assim:
 
-bc.	Inoves_Router::add('Widget::show');
+
+bc. Inoves_Router::add('Widget::show');
 
 
 p. Ou então para executar a função em todas os pedidos excepto alguns. Assim:
 
-bc.	Inoves_Router::add('Widget::show', array('excep'=>'index/index'));
+
+bc. Inoves_Router::add('Widget::show', array('excep'=>'index/index'));
 	//todos menos na homepage
 
 
