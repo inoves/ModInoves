@@ -7,13 +7,15 @@ h2. Extreme modular MCV framework
 Provalmente seja a framework mais modular que exista actualmente.
 
 
-Um problema que timanhos ao utilizar as frameworks generalistas que existem, era que quando mais modular um sistema precisava ser, mas fugia ao desenho que achamos que precisava ter. Um desenho MCV sem grande gambiaras, com o minimo de esforço na estrutura.
+h3. Inov.es
+
+Um problema que tinhamos ao utilizar as frameworks generalistas que existem, era que quando mais modular um sistema precisava ser, mas ele fugia ao desenho que achamos que precisava ter. Um desenho MCV sem grande gambiaras, com o minimo de esforço na estrutura.
 
 
 Por este motivo foi desenvolvida como prova de conceito esta framework, e logo provou ser uma camada de trabalho extremamente eficiente para desenvolver aplicativos onde a modulação é obrigatório.
 
 
-Nossa intenção não foi desenvolver uma framework totalmente nova para todos os requisitos exigidos pelo sistema, até poque actualmente existem desenvolvidos excelentes 'frameworks' generalistas, e na verdade tiramos partido disso (DRY principle), utilizando os componente que achassemos preciso para construir nossa framework extremamente modular.
+Nossa intenção não foi desenvolver uma framework totalmente nova para todos os requisitos exigidos pelo sistema, até poque actualmente existem desenvolvidos excelentes 'frameworks' generalistas, e na verdade tiramos partido disso, utilizamos para isso muitos componente já desenvolvidos e que achavamos necessários para construir nossa framework extremamente modular.
 
 
 
@@ -28,21 +30,20 @@ Geralmente encontramos frameworks que dizem ser modulares simplesmente por compa
 Nós entendemos que para um 'sistema' ser considerado modular, ele precisa ser totalmente *autonomo* na sua concepção, implementação e autonomo na sua instalação sem dependecia estrutural.
 
 
-Obvio que existem camadas que precisam ser compartilhadas por todo o sistema como por exemplo a camada de modelo, mas isso pode não ser uma regra.
+Obvio que existem camadas que precisam ser compartilhadas por todo o sistema como por exemplo a camada de modelo, e encorajamos que assim seja.
 
 
 
 h2. Como funciona?
 
-Primeiramente nossa framework obriga desenvolver modulos dentro 'design pattern' MCV. Notará que ao aprender e utilizar a framework, que não terá nenhum choque de conhecimento se estiver habituado a frameworks MCV.
+Primeiramente nossa framework obriga desenvolver modulos dentro 'design pattern' MCV. Notará que ao aprender e utilizar a nossa framework que não terá nenhum choque de conhecimento se estiver habituado a frameworks MCV.
 
 
-Inicialmente existem 9 directorios em uma instalação padrão da framework Inov.es
+Inicialmente existem 9 directórios em uma instalação padrão da framework Inov.es
 
-
-- FrameInov.es (Root dir)
+pre. - FrameInov.es (Root dir)
 	- Cache
-		Esta pasta guarda os ficheiros CACHE do output gerado pelo sistema. Este cache é considerado um cache 'Lazy'. Pois se estiver configurado para ser utilizado, o sistema será desviado caso encontre(hit) um ficheiro cache correspondente ao pedido (somente pedidos tipo GET).
+		Esta pasta guarda os ficheiros CACHE do output gerado pelo sistema. Este cache é considerado um cache 'Lazy'. Pois se estiver configurado para ser utilizado, o sistema será desviado caso encontre(hit) um ficheiro cache correspondente ao pedido (somente pedidos tipo GET, pedidos POST não passam pelo cache).
 	- Config
 		Pasta onde contém os ficheiros de configuração.
 	- Inoves
@@ -54,43 +55,56 @@ Inicialmente existem 9 directorios em uma instalação padrão da framework Inov
 	- Model
 		Nesta pasta guarda-se os ficheiros que representam a camada modelo do sistema.
 	- Modules
-		Pasta onde contém os modulos desenvolvidos para o sistema. Mais detalhes adiante.
+		Pasta onde contém os modulos desenvolvidos para o sistema. Detalhes mais adiante.
 	- Public
 		Pasta onde contém os ficheiros publicos disponiveis pelo 'web server', tais como imagens, ficheiros CSS e JS.
 	- Zend
-		Pasta onde contem os componentes da framework ZEND utilizados por nosso sistema.
+		Pasta onde contém os componentes da framework ZEND utilizados por nosso sistema.
 
 
 		
 h2. Pasta Modules
 
+Esta pasta terá os directórios dos modulos desenvolvido para sua aplicação. Cada Modulo precisa ser do mesmo nome da classe que ele representa e conter o ficheiro de implementação com o mesmo nome da classe. Não pode haver dois modulos com o mesmo nome e o ficheiro de implementação precisa ser em minusculos.
+
+
+
 h3. Controller
 
 Cada pedido(request) é composto por dois identificadores. Que pode ser identificado por um par 'controller/action'. Sempre haverá um controller/action que se relaciona com o request.
 
-Ao criar um modulo, voce ira configurar uma rota dentro de seu modulo que dirá ao sistema para *executar* uma determinada funcção quando for solicitada o deterninado request identificado pelo par 'controller/action'.
+Ao criar um modulo, voce ira configurar uma rota dentro de seu modulo atravez da funcção _setup()_ que dirá ao sistema para *executar* uma determinada funcção quando for solicitada um request identificado pelo par 'controller/action'.
 
-bq. algo como:
+bc. algo como:
 	Inoves_Router::add('Widget::show', array('only'=>'/'))
 	//Oque estou dizendo acima é para o sistema executar a função Widget::show somente quando for solicitada homepage '/'  (ou 'index/index')
 ou
 	Inoves_Router::add('Widget::show', array('only'=>array('/', 'account/*')))
-	//neste caso somente quando for encontrado a rota homepage e toda a vez que o 'controller' account for solicitado para todas as actions disponiveis.
+	//neste caso somente quando for encontrado a rota homepage e toda a vez que o 'controller' account for solicitado para todas as actions disponiveis para este controller.
 
 
 
-p. Outra maneira de configurar a rota é dizendo para executar uma determinada função para todas as rotas
-Assim:
+p. Outra maneira de configurar uma rota é dizendo para executar uma determinada função para todas os pedidos controller/action, assim:
 
-bq.	Inoves_Router::add('Widget::show')
-	
+bc.	Inoves_Router::add('Widget::show');
+
+
+p. Ou então para executar a função em todas os pedidos excepto alguns. Assim:
+
+bc.	Inoves_Router::add('Widget::show', array('excep'=>'index/index'));
+	//todos menos na homepage
+
+
+h3. Funções nos modulos.
+
+
 
 
 h3. Camada View
 
 h3. Modelos
 
-Existem disponiveis diversas bibliotecas ORM. Nós utilizamos as que já existem e que para nós atendem a todas as nossas necessidades. Poderá ter uma lista das diversas bibliotecas em:
+Existem disponiveis diversas bibliotecas ORM. Nós utilizamos as que já existem e oque para nós atendem a todas as nossas necessidades. Poderá ter uma lista das diversas bibliotecas em:
 	- http://en.wikipedia.org/wiki/List_of_object-relational_mapping_software#PHP
 
 Poderá obter informações de como registar os autoloader no bootstrap de seu sistema em:
