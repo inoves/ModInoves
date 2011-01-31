@@ -3,36 +3,42 @@
 
 class Inoves_Cache
 {
+	const CACHE_SYSTEM 	= true;
 	
 	const CACHE_OUTPUT 	= false;
 	
 	const CACHE_CORE 	= false;
 	
-	static public $cache = true;
+	const CACHE_DIR 	= 'Cache';
 	
+	
+	//store object zend_cache
 	static private $_cache=null;
 	
 	
-	
+	//-----{{{
+		//Output cache
 	public function validOutput($value, $ttl=120)
 	{
-		return (file_exists(PATH_ROOT . '/Cache/'. md5($value))  && filemtime( PATH_ROOT . '/Cache/'. md5($value)) < (time() + $ttl));
+		return (file_exists(PATH_ROOT . '/' . self::CACHE_DIR . '/' . md5($value))  && filemtime( PATH_ROOT . '/'.self::CACHE_DIR.'/' . md5($value)) < (time() + $ttl));
 	}
 	
 	public function openOutput($value)
 	{
-		return file_get_contents(PATH_ROOT . '/Cache/'. md5($value)) ;
+		return file_get_contents(PATH_ROOT . '/' . self::CACHE_DIR . '/' . md5($value)) ;
 	}
 	
 	public function saveOutput($data, $value)
 	{
-		return file_put_contents(PATH_ROOT . '/Cache/'. md5($value), $data) ;
+		return file_put_contents(PATH_ROOT . '/' . self::CACHE_DIR . '/' . md5($value), $data) ;
 	}
+	//-------}}}
+	
 	
 	
 	static public function instance(){
 		if( is_null(self::$_cache) )
-			self::_createInstance();
+			self::_createInstance();//Create and config zend_cache
 		return self::$_cache;
 	}
 	
@@ -50,6 +56,7 @@ class Inoves_Cache
 									 $frontendOptions,
 									 $backendOptions);
 	}
+	
 	
 	
 	static public function load($id)

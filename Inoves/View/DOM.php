@@ -26,7 +26,7 @@ class Inoves_View_DOM
 	static public function init()
 	{
 		ob_start();
-			include Inoves_System::$pathModules .'/'. self::$_layout;
+			include Inoves_System::instance()->pathModules .'/'. self::$_layout;
 		$output = ob_get_contents();
 		ob_clean();
 		self::openDom($output);

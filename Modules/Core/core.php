@@ -7,6 +7,11 @@ class Core extends Inoves_Modules_Core
 	
 	static function setup()
 	{
+		Inoves_Routes::add('Core::setLayout');//all
+	}
+	
+	function setLayout()
+	{
 		Inoves_View::setLayout( 'Core/layout/layout.html' );
 	}
 	

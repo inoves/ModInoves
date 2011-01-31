@@ -5,14 +5,8 @@
 */
 class Inoves_Routes
 {
-	static private $_except=array();
-	static private $_only=array();
-	static private $_all=array();
+
 	
-	static private $_cacheCalls=array();
-	
-	
-	//tem que retornar os callbacks contr/action contr/* e */action
 	static public function callsFromURS(Inoves_URS $URS)
 	{
 		return self::calls($URS->controller, $URS->action);
@@ -20,23 +14,7 @@ class Inoves_Routes
 	
 	
 	static function calls($controller, $action){
-		//if(($allCall=Inoves_Cache::load('Inoves_Calls_'.$controller.$action))==false){
-		//	echo "no cache";
-		//}
-		//if(!isset(self::$_cacheCalls[$controller.$action]))
-		//{
-			$reduceCallbacks = array_merge((array)self::$_except[$controller]['*'],(array)self::$_except[$controller][$action],(array)self::$_except['*'][$action]);
-			$allCall = array_diff( self::$_all, $reduceCallbacks );
-			ksort($allCall);
-			self::_merge($allCall, (array)self::$_only[$controller][$action]);
-			self::_merge($allCall, (array)self::$_only[$controller]['*']);
-			self::_merge($allCall, (array)self::$_only['*'][$action]);
-			ksort($allCall);
-		//	Inoves_Cache::save($allCall, 'Inoves_Calls_'.$controller.$action);
-			//self::$_cacheCalls[$controller.$action]=$allCall;
-		//}
-
-		return $allCall;//self::$_cacheCalls[$controller.$action];
+		return Inoves_System::calls($controller, $action);
 	}
 	
 	
@@ -44,29 +22,13 @@ class Inoves_Routes
 	// controller/action == controller/action, */action, controller/*
 	static function existExcept($controller, $action=null)
 	{
-		if($action==null)
-			list($controller,$action)=explode('/', $controller);
-		if(isset(self::$_except[$controller][$action]))
-			return self::$_except[$controller][$action];
-		elseif(isset(self::$_except[$controller]['*']))
-			return self::$_except[$controller]['*'];
-		elseif(isset(self::$_except['*'][$action]))
-			return self::$_except['*'][$action];
-		return false;
+		return Inoves_System::existExcept($controller, $action);
 	}
 	
 	
 	static function existOnly($controller, $action=null)
 	{
-		if($action==null)
-			list($controller,$action)=explode('/', $controller);
-		if(isset(self::$_only[$controller][$action]))
-			return self::$_only[$controller][$action];
-		elseif(isset(self::$_only[$controller]['*']))
-			return self::$_only[$controller]['*'];
-		elseif(isset(self::$_only['*'][$action]))
-			return self::$_only['*'][$action];
-		return false;
+		return Inoves_System::existOnly($controller, $action);
 	}
 	
 	
@@ -81,19 +43,7 @@ class Inoves_Routes
 	*/
 	static public function add($callback, array $routes = array())
 	{
-		if(key($routes)=='except')
-		{
-			self::addExcept($callback,$callback, $routes['except']);
-			self::addAll($callback,$callback);
-		}
-		elseif(key($routes)=='only')
-		{
-			self::addOnly($callback,$callback, $routes['only']);
-		}
-		else
-		{
-			self::addAll($callback,$callback);
-		}
+		return Inoves_System::add($callback, $routes);
 	}
 	
 	
@@ -104,102 +54,30 @@ class Inoves_Routes
 	 */
 	static public function _replace($replace, $callback, $routes = array())
 	{
-		
-		if(key($routes)=='except')
-		{
-			if(is_array($routes['except']))
-			{
-				foreach ($routes['except'] as $route) {
-					list($c,$a)=explode('/', $route);
-					self::$_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$replace] = explode('::',$callback);
-				}
-			}
-			else
-			{
-				list($c,$a)=explode('/', $routes['except']);
-				self::$_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$replace] = explode('::',$callback);
-			}
-		}
-		elseif(key($routes)=='only')
-		{
-			if(is_array($routes['only']))
-			{
-				foreach ($routes['only'] as $route) {
-					list($c,$a)=explode('/', $route);
-					self::$_only[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$replace] = explode('::',$callback);
-				}
-			}
-			else
-			{
-				list($c,$a)=explode('/', $routes['only']);
-				self::$_only[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$replace] = explode('::',$callback);
-			}
-		}
-		else
-		{
-			self::$_all[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$replace] = explode('::',$callback);
-		}
+		return Inoves_System::_replace($replace, $callback, $routes);
 	}
 	
 	
 	static public function addExcept($index ,$callback, $except)
 	{
-		if(is_array($except))
-		{
-			foreach($except as $route)
-			{
-				list($c,$a)=explode('/', $route);
-				self::$_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][Inoves_System::$currentOrder][$index] = explode('::',$callback);
-			}
-		}
-		else
-		{
-			list($c,$a)=explode('/', $except);
-			self::$_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][Inoves_System::$currentOrder][$index] = explode('::',$callback);
-		}
+		return Inoves_System::addExcept($index, $callback, $except);
+
 	}
 	
 	
 	static public function addOnly($index ,$callback, $only)
 	{
-		if(is_array($only))
-		{
-			foreach($only as $route)
-			{
-				list($c,$a)=explode('/', $route);
-				self::$_only[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][Inoves_System::$currentOrder][$index] = explode('::',$callback);
-			}
-		}
-		else
-		{
-			list($c,$a)=explode('/', $only);
-			self::$_only[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][Inoves_System::$currentOrder][$index] = explode('::',$callback);
-		}
+		return Inoves_System::addOnly($index, $callback, $only);
 	}
 	
 	
 	static public function addAll($index ,$callback)
 	{
-		self::$_all[Inoves_System::$currentOrder][$index] = explode('::',$callback);
+		return Inoves_System::addAll($index, $callback);
 	}
 	
 	static private function _merge(&$a, $b){
-	    $keys = array_keys($a);
-	    foreach($keys as $key){
-	        if(isset($b[$key])){
-	            if(is_array($a[$key]) and is_array($b[$key])){
-	                self::_merge($a[$key],$b[$key]);
-	            }else{
-	                $a[$key] = $b[$key];
-	            }
-	        }
-	    }
-	    $keys = array_keys($b);
-	    foreach($keys as $key){
-	        if(!isset($a[$key])){
-	            $a[$key] = $b[$key];
-	        }
-	    }
+	    return Inoves_System::_merge($a, $b);
 	}
 	
 }

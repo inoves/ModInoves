@@ -53,7 +53,7 @@ class Inoves_View_HTML
 	
 	static public function includePartial($value='')
 	{
-		include Inoves_System::$pathModules . $value;
+		include Inoves_System::instance()->pathModules . $value;
 	}
 	
 	static public function addPartial($partialArea, Inoves_Partial $partial)
@@ -65,7 +65,7 @@ class Inoves_View_HTML
 	static public function show()
 	{
 		//ob_start();
-			include Inoves_System::$pathModules .'/'.self::$_layout;
+			include_once Inoves_System::instance()->pathModules .'/'.self::$_layout;
 		//$output = ob_get_contents();
 		//ob_clean();
 		//return $output;

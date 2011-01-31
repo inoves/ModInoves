@@ -1,13 +1,5 @@
 <?php
 
-//
-$bufferOutput='';
-function ob_handler($value)
-{
-	global $bufferOutput;
-	$bufferOutput .= $value;
-	return $value;
-}
 
 // Define path to root directory
 defined('PATH_ROOT')
@@ -45,6 +37,9 @@ include(PATH_ROOT.'/Inoves/View.php');
 Inoves_URS::setRequest($_SERVER['REQUEST_URI']);
 
 
+if(Inoves_Cache::CACHE_SYSTEM)
+	Inoves_System::instanceMe(Inoves_Cache::load( 'Inoves_System_Instance' ));
+
 //carrega modules e carrega call
 Inoves_System::chargeModules( PATH_ROOT . '/Modules');
 
@@ -59,11 +54,28 @@ include PATH_ROOT.'/Config/bootstrapApp.php';
 //executa os callbacks
 Inoves_System::call($calls);
 
+if(Inoves_Cache::CACHE_SYSTEM)
+	Inoves_Cache::save( Inoves_System::instance(), 'Inoves_System_Instance' );
+
+
 //only buffer output of site
-if(Inoves_Cache::CACHE_OUTPUT) ob_start( 'ob_handler' );
+if(Inoves_Cache::CACHE_OUTPUT){
+	//Output store and handler
+	$bufferOutput='';
+	function ob_handler($value)
+	{
+		global $bufferOutput;
+		$bufferOutput .= $value;
+		return $value;
+	}
+	ob_start( 'ob_handler' );
+} 
 
 Inoves_View::show();
+
+//stack buffer handlers
 while (@ob_end_flush());
+
 
 //maybe cache your output???
 if( Inoves_Cache::CACHE_OUTPUT && $_GET )
