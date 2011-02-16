@@ -4,11 +4,11 @@
 */
 class Menu extends Inoves_Modules
 {
-	
+	//public $order = 10;
 	//adiciona rotas
 	static function setup()
 	{
-		Inoves_Routes::add('Menu::menuTop');//all
+		Inoves_Routes::add('Menu::menuTop', array('except'=>'menu/slug'));//all
 		Inoves_Routes::add('Menu::menuLeft');//all
 		
 		Inoves_Routes::add('Menu::menuContent', array('only'=>'menu/slug'));

@@ -86,7 +86,7 @@ class Inoves_System
 	
 	static public function call($callbacksAr)
 	{
-		foreach ($callbacksAr as $callbacks) {
+		foreach ($callbacksAr as $callbacks) {//by order
 			foreach($callbacks as $key => $callback){
 				$controller = $callback[0];
 				$action = $callback[1];
@@ -121,13 +121,16 @@ class Inoves_System
 		
 		if(!isset(self::instance()->_cacheCalls[$controller.$action]))//from serialize
 		{
+			$reduceCallbacks = array();
 			$reduceCallbacks = array_merge((array)self::instance()->_except[$controller]['*'],(array)self::instance()->_except[$controller][$action],(array)self::instance()->_except['*'][$action]);
-			$allCall = array_diff( self::instance()->_all, $reduceCallbacks );
-			ksort($allCall);
+			$allCall = self::instance()->_all;
 			self::_merge($allCall, (array)self::instance()->_only[$controller][$action]);
 			self::_merge($allCall, (array)self::instance()->_only[$controller]['*']);
 			self::_merge($allCall, (array)self::instance()->_only['*'][$action]);
 			ksort($allCall);
+			foreach( $allCall as $k => $all){
+				$allCall[$k] = array_diff_key( $all, $reduceCallbacks) ;
+			}
 			self::instance()->_cacheCalls[$controller.$action] = $allCall;
 		}
 		return self::instance()->_cacheCalls[$controller.$action];
@@ -177,16 +180,16 @@ class Inoves_System
 	{
 		if(key($routes)=='except')
 		{
-			self::addExcept($callback,$callback, $routes['except']);
-			self::addAll($callback,$callback);
+			self::addExcept($callback, $callback, $routes['except']);
+			self::addAll($callback, $callback);
 		}
 		elseif(key($routes)=='only')
 		{
-			self::addOnly($callback,$callback, $routes['only']);
+			self::addOnly($callback, $callback, $routes['only']);
 		}
 		else
 		{
-			self::addAll($callback,$callback);
+			self::addAll($callback, $callback);
 		}
 	}
 	
@@ -243,13 +246,13 @@ class Inoves_System
 			foreach($except as $route)
 			{
 				list($c,$a)=explode('/', $route);
-				self::instance()->_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][self::instance()->currentOrder][$index] = explode('::',$callback);
+				self::instance()->_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$index] = explode('::',$callback);
 			}
 		}
 		else
 		{
 			list($c,$a)=explode('/', $except);
-			self::instance()->_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][self::instance()->currentOrder][$index] = explode('::',$callback);
+			self::instance()->_except[($c!='')?strtolower($c):Inoves_URS::CONTROLLER_DEFAULT][($a!='')?strtolower($a):Inoves_URS::ACTION_DEFAULT][$index] = explode('::',$callback);
 		}
 	}
 	

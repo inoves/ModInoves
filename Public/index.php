@@ -8,9 +8,9 @@ set_include_path( PATH_ROOT.
 				  PATH_SEPARATOR.
 				  PATH_ROOT.'/Modules/'.
 				  PATH_SEPARATOR.
-				  FRAME_PATH.'/Model/'.
+				  PATH_ROOT.'/Model/'.
 				  PATH_SEPARATOR.
-				  FRAME_PATH.'/Lib/');
+				  PATH_ROOT.'/Lib/');
 
 //Autoload
 include(PATH_ROOT.'/Zend/Loader/Autoloader.php');
