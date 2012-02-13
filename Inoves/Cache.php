@@ -1,6 +1,4 @@
 <?php
-
-
 class Inoves_Cache
 {
 	const CACHE_SYSTEM 	= false;
@@ -42,22 +40,20 @@ class Inoves_Cache
 		return self::$_cache;
 	}
 	
-	
+	//---{{{ CORE save on APC... extreme fast
 	static private function _createInstance(){
 		$frontendOptions = array(
-			'lifetime' => 7200,
+			'lifetime' => 120,
 			'automatic_serialization' => true
 		);
 		$backendOptions = array(
 			'cache_dir' => sys_get_temp_dir()
 		);
 		self::$_cache = Zend_Cache::factory('Core',
-									 'File',
+									 'Apc',
 									 $frontendOptions,
 									 $backendOptions);
 	}
-	
-	
 	
 	static public function load($id)
 	{
@@ -69,4 +65,5 @@ class Inoves_Cache
 	{
 		self::instance()->save($data, $id);
 	}
+	//---}}}
 }

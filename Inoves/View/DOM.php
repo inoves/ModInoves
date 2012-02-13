@@ -4,7 +4,8 @@
 */
 require_once PATH_ROOT.'/Lib/phpQuery/phpQuery.php';
 
-class Inoves_View_DOM
+//implements Inoves_View_interface
+class Inoves_View_DOM implements Inoves_View_Interface
 {
 	
 	static private $_layout = '';

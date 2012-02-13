@@ -178,6 +178,14 @@ class Inoves_System
 	*/
 	static public function add($callback, array $routes = array())
 	{
+		if(key($routes)=='only'){
+			self::addOnly($callback, $callback, $routes['only']);
+		}else{
+			self::addAll($callback, $callback);
+			if(key($routes)=='except')
+				self::addExcept($callback, $callback, $routes['except']);
+		}
+		/*
 		if(key($routes)=='except')
 		{
 			self::addExcept($callback, $callback, $routes['except']);
@@ -190,7 +198,7 @@ class Inoves_System
 		else
 		{
 			self::addAll($callback, $callback);
-		}
+		}*/
 	}
 	
 	

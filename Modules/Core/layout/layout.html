@@ -3,8 +3,9 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	
 	<head>
-		<title>lellol.com</title>
+		<title>test</title>
 	</head>
+	
 	
 	<link rel="stylesheet" href="/styles/reset.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="/styles/base.css" type="text/css" media="screen">
@@ -38,17 +39,17 @@
 		<div class="bckgrnd1">
 			
 			<div id="menuTop">
-				<?php echo Inoves_View_HTML::getPartials('menuTop'); ?>
+				<?php $this->placeholder('menuTop'); ?>
 			</div>
 
 			<div id="contentLogo">
 				
 				<div class="clnLft" id="logoImage">
-						<a href="/" class="logo"><img src="/images/logo.png" border="0"></a>
+						<a href="/" class="logo"><!--img src="/images/logo.png" border="0"--></a>
 				</div>
 				
 				<div class="clnRgh boxLogin" id="boxLogin">
-					<?php echo Inoves_View_HTML::getPartials('loginBox'); ?>
+					<?php $this->placeholder('loginBox'); ?>
 				</div>
 				
 				<div class="clrFx"></div>
@@ -56,15 +57,14 @@
 			
 			<div id="main">
 				
-				<?php echo Inoves_View_HTML::getPartials('action'); ?>
-				
+				<?php $this->placeholder('action'); ?>
 				
 			</div>
 		</div>
 		
 		<div class="clrFx"></div>
 		<div class="footerLellol" id="contentFooter">
-			<?php echo Inoves_View_HTML::getPartials('footer'); ?>
+			<?php $this->placeholder('footer'); ?>
 		</div>
 </body>
 </html>

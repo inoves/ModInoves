@@ -2,7 +2,7 @@
 /**
 * 
 */
-class Inoves_Modules_Core
+class Inoves_Modules_Core extends Inoves_Modules
 {
 	public $order = -10;
 	

@@ -41,17 +41,23 @@ class Inoves_URS
 	}
 	
 	//controller/action/param1/param2/param3...
-	static public function setRequest($value='')
+	static public function setRequest($rawRequest)
 	{
-		list($c,$a,$params)=explode('/', substr($value, 1));
+		self::parseRequest($rawRequest);
+	}
+	
+	static public function parseRequest($rawRequest)
+	{
+		list($requestUrs, $rawParams)=explode('?', $rawRequest);
+		list($c,$a,$params)=explode('/',  substr($requestUrs, 1));
+		parse_str($rawParams, self::$params);
 		self::setController($c);
 		self::setAction($a);
 		if (!is_array($params))
 			self::$params[0] = $params;
 		else
-			self::$params = $params;
+			self::$params = $params + self::$params;
 	}
-	
 	
 	static public function setURS($c,$a)
 	{

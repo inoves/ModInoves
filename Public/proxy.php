@@ -1,8 +1,3 @@
-$dom = new DomDocument();
-$dom->loadXML(file_get_contents('http://cinema.sapo.pt'));
-$body = $dom->documentElement->getElementsByTagName('body')->item(0);
-echo $body->getAttributeNode('background')->value. "\n";
-
 <?php
 /**
 * @filename: proxy.php

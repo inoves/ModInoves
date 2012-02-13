@@ -4,15 +4,16 @@
 */
 class Core extends Inoves_Modules_Core
 {
-	
 	static function setup()
 	{
-		Inoves_Routes::add('Core::setLayout');//all
+		Inoves_Routes::add('Core::layout');//all
 	}
 	
-	function setLayout()
+	
+	function layout()
 	{
-		Inoves_View::setLayout( 'Core/layout/layout.html' );
+		$partial = new Inoves_Partial('Core/layout/layout.html');
+
+		Inoves_View::set_layout($partial);
 	}
-	
 }

@@ -14,4 +14,9 @@ class Inoves_Modules
 			
 		}
 	}
+
+	public function view()
+	{
+		return Inoves_View::instance();
+	}
 }

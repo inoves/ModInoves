@@ -16,12 +16,12 @@
 		</div>
 	</div>
 	
-	<?php echo Inoves_View_HTML::getPartials('content'); ?>
+	<?php $this->view()->placeholder('content'); ?>
 	
-	<?php $this->includePartial('Menu/partials/module/icons.phtml') ?>
+	<?php $this->include_partial('Menu/partials/module/icons.phtml') ?>
 	
 </div>
 
 <div id="sidebar" class="clnLft mnLft">
-	<?php echo Inoves_View_HTML::getPartials('sidebar'); ?>
+	<?php $this->view()->placeholder('sidebar'); ?>
 </div>

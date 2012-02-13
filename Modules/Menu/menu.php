@@ -1,30 +1,27 @@
 <?php
 /**
-* controller/actionName/request0/request1/request2/...
+* controller/actionName/params[0]/params[1]/params[2]/?foo=bar
 */
 class Menu extends Inoves_Modules
 {
 	//public $order = 10;
+
 	//adiciona rotas
 	static function setup()
 	{
 		Inoves_Routes::add('Menu::menuTop', array('except'=>'menu/slug'));//all
 		Inoves_Routes::add('Menu::menuLeft');//all
-		
 		Inoves_Routes::add('Menu::menuContent', array('only'=>'menu/slug'));
 		Inoves_Routes::add('Menu::homeContent', array('only'=>'/'));
-		//Inoves_View::setLayout( 'Core/partial/layout.phtml' );
-		//todas as rotas, except todas as actions do controllers car
-		//Inoves_Routes::add('Menu::all');
-		//Inoves_Routes::add('Menu::menuItem', array('except'=>array('/')));
-		//Inoves_Routes::add('Menu::title', array('only'=>array('ola/')));
+
+		
 	}
 	
 	
 	public function menuTop()
 	{
 		$partial = new Inoves_Partial('Menu/partials/menu/menuTop.phtml');
-		Inoves_View::addPartial('menuTop', $partial);
+		Inoves_View::add_partial('menuTop', $partial);
 	}
 	
 	
@@ -32,7 +29,7 @@ class Menu extends Inoves_Modules
 	{
 		$partial = new Inoves_Partial('Menu/partials/menu/menuLeft.phtml');
 		$partial->menus = array('menu1','menu2','menu3','menu4','menu5', 'menu6');
-		Inoves_View::addPartial('sidebar', $partial);
+		Inoves_View::add_partial('sidebar', $partial);
 	}
 	
 	//put action content from menu
@@ -40,15 +37,14 @@ class Menu extends Inoves_Modules
 	{
 		$partial = new Inoves_Partial('Menu/partials/page/menuContent.phtml');
 		$partial->slug = Inoves_URS::$params[0];
-		Inoves_View::addPartial('action', $partial);
+		Inoves_View::add_partial('action', $partial);
 	}
 	
 	public function homeContent()
 	{
 		$partial = new Inoves_Partial('Menu/partials/page/homeContent.phtml');
 		$partial->slug = Inoves_URS::$params[0];
-		Inoves_View::addPartial('action', $partial);
+		Inoves_View::add_partial('action', $partial);
 	}
-	
-	
+
 }

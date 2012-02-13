@@ -3,16 +3,28 @@
 * Inoves_View_HTML::getPartials('nameArea');
 * Inoves_View_HTML::setPartials('nameArea', $partial);
 */
-class Inoves_View_HTML
+class Inoves_View_HTML extends stdClass implements Inoves_View_Interface
 {
 	
-	static private $_layout = '';
+	private $_layout = '';
 	
 	
-	static private $_vars=array();
+	private $_vars=array();
 	
 	
-	static private $_partials=array();
+	private $_partials=array();
+
+	
+	static private $_instance=null;
+
+
+	public function instance()
+	{
+		if(self::$_instance==null)
+			self::$_instance = new self();
+		return self::$_instance;
+	}
+
 	
 	//Get variables
 	static public function get($name)

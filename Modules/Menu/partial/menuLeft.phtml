@@ -3,7 +3,7 @@
 	<div id="menu">
 		<ul class="menu">
 		
-			<?php foreach ($this->menus as $k=>$menuItem):?>
+			<?php if(is_array($this->menus) foreach ($this->menus as $k=>$menuItem):?>
 		
 				<li class="menuItem">
 					<a class="lnkMenuItem " href="/menu/slug/<?php echo $k ?>"><?php echo $menuItem?></a>
